@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Media Query</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <h1>Media Queries</h1>
+    <div class="column">
+      <p>Media queries allow us to make our sites <em>responsive</em>. We can use media queries to apply CSS styling only when certain conditions apply. For instance, our sites can look different depending on the size of the screen, or <em>viewport</em> a user is viewing our content with. We can also change the way our site appears if a user is printing our website, or using a screen-reader! </p>
+    </div>
+    <div class="column">
+      <p>Using media queries and responsive design allows us to ensure that our site looks and works great no matter <em>how</em> the user is viewing it.</p> And, as more and more people use more and more devices to browse the internet, integrating media queries into websites is becoming a common, widespread practice!
+    </div>
+    <div class="column">
+      <p>Are you beginning to see the possibilities here? Media queries are awesome!</p>
+    </div>
+    <h2>Media Types</h2>
+    <p>Media queries often specify something called a media type.
+      As the name implies, a media type refers to the type of media-viewing
+      device the user is viewing our site with. We have the following
+      options to choose from:</p>
+      <ul>
+        <li>
+          all: Refers to any and all devices.
+        </li>
+        <li>
+          print: Refers to viewing our site in "print preview" mode.
+        </li>
+        <li>
+          screen: Refers to color screens.
+        </li>
+        <li>
+          screen: Refers to color screens.
+        </li>
+      </ul>
+      <p>Additionally, note that if you do not explicitly specify a
+        type, your media query will default to all.We can add the media
+         type to our query like this: </p>
+      <pre>
+        @media screen () {
+
+        }
+      </pre>
+     <h2>Media Features</h2>
+     <p>Next, our media query requires we include something called a
+       media feature. Media features are specific properties and
+       details about the manner the user is viewing content.
+       The most commonly-used media features are:</p>
+       <ul>
+         <li>
+           height: Describes the height of the viewport, in pixels.
+         </li>
+         <li>
+           width: Describes the width of the viewport, in pixels.
+         </li>
+         <li>
+           orientation: Indicates whether the viewport is landscape
+           (wider than it is tall) or portrait (taller than it is
+           wide).
+         </li>
+         <li>
+           screen: Refers to color screens.
+         </li>
+       </ul>
+       <p>Additionally, note that if you do not explicitly specify a
+         type, your media query will default to all.We can add the media
+          type to our query like this: </p>
+   <pre>
+     @media screen and (max-width: 768px) {
+
+     }
+   </pre>
+   <p>A breakpoint is the point at which a media query's condition
+     becomes true. For instance, because our media query has a
+     max-width of 768px, it will apply its styles only when the
+     viewport is 768px or less wide. 768px is therefore the
+     breakpoint, because it is the point at which the query will be
+     "activated".</p>
+     <p>Let's add some basic, yet noticeable styles, so we can readily see when
+       hey're being applied:</p>
+       <pre>
+         @media screen and (max-width: 768px) {
+             body {
+             background-color: black;
+             color: white;
+           }
+         }        
+       </pre>
+
+  </body>
+</html>
